@@ -17,7 +17,7 @@ var app = express();
 
 // Configuration App
 app.configure(function(){
-  app.set('port', process.env.PORT || 3000);
+  app.set('port', process.env.PORT || 80);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.favicon());
@@ -27,7 +27,12 @@ app.configure(function(){
   app.use(express.cookieParser('your secret here'));
   app.use(express.session());
   app.use(app.router);
-  app.use(require('less-middleware')({ src: __dirname + '/public' }));
+  app.use(require('less-middleware')({ 
+    dest: __dirname + '/public/stylesheets',
+    src: __dirname + '/src/less',
+    prefix: '/stylesheets',
+    compress: true
+  }));
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
