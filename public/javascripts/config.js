@@ -19,7 +19,5 @@ requirejs.config({
         'underscore': 'vendor/underscore',
         'backbone': 'vendor/backbone',
         'domReady': 'vendor/domReady'
-
-
     }
 });

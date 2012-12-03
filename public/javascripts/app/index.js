@@ -5,16 +5,19 @@ define([
 	],function ($, Backbone, DesktopRouter) {
 	
 	var appRouter;
-	function app() {
-		console.log("APP LOADED");
-		function loadSite() {
-			console.log("SITE LOADED");
+	function app () {
+		function loadSite () {
+			console.log("APP LOADED"); //DEBUG
 		}
-		function initialize() {
+		function initialize () {
 			appRouter = new DesktopRouter();
 		}
-		initialize();
-		return appRouter;
+		$.when(loadSite(), initialize()).then(function () {
+			console.log("APP RUNNING"); //DEBUG
+			return appRouter;
+		})
+		//initialize();
+
 	}
 
 	return app;

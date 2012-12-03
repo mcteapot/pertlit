@@ -10,7 +10,7 @@ require(['./config'],
 			function  (domReady, app) {
 				domReady(function  (argument) {
 					// app launch
-					console.log("DOM READY");
+					console.log("DOM READY"); //DEBUG
 					app();
 			});
 	});	
