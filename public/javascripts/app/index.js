@@ -1,14 +1,22 @@
 define([
-	'jquery', 
-	'davis'
-	],function ($, davis){
+	'jquery',
+	"backbone", 
+	'app/routers/desktoprouter'
+	],function ($, Backbone, DesktopRouter) {
 	
-	return function app() {
-		(function(){
-			console.log("APP LOADED");
-		})();
-		//console.log("jquery", $);
-
+	var appRouter;
+	function app() {
+		console.log("APP LOADED");
+		function loadSite() {
+			console.log("SITE LOADED");
+		}
+		function initialize() {
+			appRouter = new DesktopRouter();
+		}
+		initialize();
+		return appRouter;
 	}
+
+	return app;
 
 });

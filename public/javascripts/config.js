@@ -4,6 +4,8 @@ requirejs.config({
     //baseUrl: 'javascripts/vendor',
     //shim tells require.js which global variables relate to modules
     shim: {
+        'underscore': { deps: ['jquery'], exports: '_' },
+        'backbone': { deps: ['underscore', 'jquery'], exports: 'Backbone' },
         'bootstrap': { deps: ['underscore', 'jquery'],  exports: '$'}
 
     }, 
@@ -15,8 +17,9 @@ requirejs.config({
         ],
         'bootstrap': 'vendor/bootstrap',
         'underscore': 'vendor/underscore',
-        'domReady': 'vendor/domReady',
-        'davis': 'vendor/davis'
+        'backbone': 'vendor/backbone',
+        'domReady': 'vendor/domReady'
+
 
     }
 });
