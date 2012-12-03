@@ -25,7 +25,7 @@ define(["jquery", "backbone", "app/models/model"],
 
             getQuote: function () {
                 // set your twitter id
-                var user = 'HistoryQuote';
+                var user = 'Inspire_Us';
                 this.quote = "We must be the change we wish to see in the world. -Gandhi"
                 // using jquery built in get json method with twitter api, return only one result
                 $.getJSON("https://api.twitter.com/1/statuses/user_timeline.json?screen_name=" + user + "&count=1&callback=?", function(data) {
