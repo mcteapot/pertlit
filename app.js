@@ -65,7 +65,7 @@ app.configure('test', function() {
 
 
 app.get('/', function(req, res){
-  res.render('index', { title: 'Pertlit' });
+  res.render('index', { title: 'pert-lit' });
 });
 
 //app.get('/', routes.index);

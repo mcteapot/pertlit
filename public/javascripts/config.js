@@ -15,7 +15,8 @@ requirejs.config({
         ],
         'bootstrap': 'vendor/bootstrap',
         'underscore': 'vendor/underscore',
-        'domReady': 'vendor/domReady'
+        'domReady': 'vendor/domReady',
+        'davis': 'vendor/davis'
 
     }
 });

@@ -5,7 +5,9 @@ html
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css', media='screen')
 	body
-		block content
+		div.main-container
+			div.container-fluid		
+				block content
 		script(data-main='javascripts/main', src='javascripts/vendor/require.js')
 		//script(type='text/javascript', src='http://code.jquery.com/jquery-latest.js')
 		//script(type='text/javascript', src='javascripts/bootstrap.min.js')

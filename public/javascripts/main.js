@@ -4,7 +4,7 @@ require(['./config'],
 	//load the dom and exicute 
 	function (config) {
 		require(['domReady',
-				'app/main'
+				'app/index'
 		], 
 			//once the dom is ready, execuite the app
 			function  (domReady, app) {
