@@ -1,8 +1,8 @@
 // View.js
 // -------
-define(["jquery", "backbone", "app/models/model"],
+define(["jquery", "underscore", "backbone", "app/models/model", "jade!app/templates/headings"],
 
-    function ($, Backbone, Model){
+    function ($, _, Backbone, Model, headingView){
 
         var View = Backbone.View.extend({
 
@@ -52,7 +52,9 @@ define(["jquery", "backbone", "app/models/model"],
 
                 // Dynamically updates the UI with the view's template
                 //this.$el.html(this.template);
-                //this.$el.html("<span class='red'>Hello <b>Again</b></span>");
+                this.$el.html("<span class='red'>Hello <b>Again</b></span>");
+                this.$el.html(headingView());
+                //console.log(headingView());
                 this.getQuote();
                 //$("p.main-quote").append(this.quote);
                 //var temp = this.getQuote();

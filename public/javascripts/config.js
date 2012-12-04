@@ -18,6 +18,7 @@ requirejs.config({
         'bootstrap': 'vendor/bootstrap',
         'underscore': 'vendor/underscore',
         'backbone': 'vendor/backbone',
-        'domReady': 'vendor/domReady'
+        'domReady': 'vendor/domReady',
+        'jade': 'vendor/jade'
     }
 });
