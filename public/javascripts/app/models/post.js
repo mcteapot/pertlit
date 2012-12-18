@@ -1,11 +1,11 @@
-// Model.js
+// Post.js
 // --------
 define(['jquery', 'backbone'],
 
     function ($, Backbone) {
 
         // Creates a new Backbone Model class object
-        var Model = Backbone.Model.extend({
+        var Post = Backbone.Model.extend({
 
             // Model Constructor
             initialize: function () {
@@ -14,6 +14,10 @@ define(['jquery', 'backbone'],
 
             // Default values for all of the Model attributes
             defaults: {
+                sender: null,
+                tags: null,
+                body: null,
+                type: null
 
             },
 
@@ -25,7 +29,7 @@ define(['jquery', 'backbone'],
         });
 
         // Returns the Model class
-        return Model;
+        return Post;
 
     }
 

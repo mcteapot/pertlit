@@ -1,11 +1,11 @@
-// Model.js
+// UserData.js
 // --------
 define(['jquery', 'backbone'],
 
     function ($, Backbone) {
 
         // Creates a new Backbone Model class object
-        var Model = Backbone.Model.extend({
+        var UserData = Backbone.Model.extend({
 
             // Model Constructor
             initialize: function () {
@@ -14,6 +14,8 @@ define(['jquery', 'backbone'],
 
             // Default values for all of the Model attributes
             defaults: {
+                userName = null
+
 
             },
 
@@ -25,7 +27,7 @@ define(['jquery', 'backbone'],
         });
 
         // Returns the Model class
-        return Model;
+        return UserData;
 
     }
 

@@ -1,6 +1,6 @@
 // DesktopRouter.js
 // ----------------
-define(["jquery", "backbone", "app/models/model", "app/views/view", "app/collections/collection"],
+define(['jquery', 'backbone', 'app/models/model', 'app/views/view', 'app/collections/collection'],
         
     function ($, Backbone, Model, View, Collection) {
 

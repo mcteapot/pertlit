@@ -1,11 +1,11 @@
-// Model.js
+// AppState.js
 // --------
 define(['jquery', 'backbone'],
 
     function ($, Backbone) {
 
         // Creates a new Backbone Model class object
-        var Model = Backbone.Model.extend({
+        var AppState = Backbone.Model.extend({
 
             // Model Constructor
             initialize: function () {
@@ -14,7 +14,7 @@ define(['jquery', 'backbone'],
 
             // Default values for all of the Model attributes
             defaults: {
-
+                loggedIn: false
             },
 
             // Get's called automatically by Backbone when the set and/or save methods are called (Add your own logic)
@@ -25,7 +25,7 @@ define(['jquery', 'backbone'],
         });
 
         // Returns the Model class
-        return Model;
+        return AppState;
 
     }
 
